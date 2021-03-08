@@ -45,7 +45,7 @@
     $lata = null;
     $procent = null;
     $msc_kwota = null;
-    $messages[];
+    $messages = array();
    
     getParams($kredyt, $lata, $procent);
     if ( validate($kredyt, $lata, $procent, $messages) ) { 

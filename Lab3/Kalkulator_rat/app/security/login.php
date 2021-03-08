@@ -25,8 +25,8 @@
         return false;
     }
     
-    $form[];
-    $messages[];
+    $form = array();
+    $messages = array();
 
     getParamsLogin($form);
     
