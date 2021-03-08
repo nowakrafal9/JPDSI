@@ -16,7 +16,7 @@
         
         if($form['login'] == "user" && $form['pass'] == "user"){
             session_start();
-            $_SESSION['role'] = 'user';
+            $_SESSION['user'] = 'user';
             
             return true;
         }
@@ -30,5 +30,5 @@
 
     getParamsLogin($form);
     
-    if(!validateLogin($form, $messages)){ include _ROOT_PATH.'/app/security.login_view.php'; }
+    if(!validateLogin($form, $messages)){ include _ROOT_PATH.'/app/security/login_view.php'; }
     else{ header("Location: "._APP_URL); }

@@ -8,7 +8,7 @@
     
     <body>
         <div style = "width:90%; margin: 2em auto;">
-            <form action="<?php print(_APP_ROOT);?>/app/calc.php" method="post" class="pure-form pure-form-stacked">
+            <form action="<?php print(_APP_ROOT);?>/app/security/login.php" method="post" class="pure-form pure-form-stacked">
                 <legend>Kalkulator rat</legend>
                 <fieldset>
                     <label for = "login">Login:</label>
