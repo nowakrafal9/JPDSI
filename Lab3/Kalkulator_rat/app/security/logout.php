@@ -1,16 +1,6 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of logout
- *
- * @author Rafal
- */
-class logout {
-    //put your code here
-}
+    require_once dirname(__FILE__).'/../../config.php';
+    session_start();
+    session_destroy();
+    
+    header("Location: "._APP_URL);
