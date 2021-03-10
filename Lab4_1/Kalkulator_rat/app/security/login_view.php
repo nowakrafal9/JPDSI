@@ -20,8 +20,7 @@
 	<header id="head">
 		<div class="container">
 			<div class="row">
-				<h1 class="lead">Kalkulator rat</h1>
-				<p class="tagline">Szablony, łączenie HTML z różnych plików</p>
+				<?php echo $page_header?>
 			</div>
 		</div>
 	</header>  
