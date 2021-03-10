@@ -7,8 +7,8 @@
     
     $page_title = 'Kalkulator rat';
     $page_description = 'Kalkulator budowany przez dołączenie części HTML';
-    $page_header = '<h1 class="lead">Kalkulator rat</h1> <p class="tagline">Szablony, łączenie HTML z różnych plików</p>';
-    $page_footer = 'Kalkulator rat oparty na szablonie <a href="https://www.gettemplate.com/info/progressus/">Progressus</a>';
+    $page_header = 'Prosty szablon';
+    $page_footer = 'stopka';
     
     function out(&$param){
 	if (isset($param)){

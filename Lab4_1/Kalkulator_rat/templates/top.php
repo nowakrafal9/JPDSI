@@ -20,7 +20,8 @@
 	<header id="head">
 		<div class="container">
 			<div class="row">
-				<?php echo $page_header?>
+				<h1 class="lead">Kalkulator rat</h1>
+				<p class="tagline">Szablony, łączenie HTML z różnych plików</p>
 				<p><a class="btn btn-action btn-lg" href = "<?php print(_APP_ROOT);?>/app/security/logout.php" role="button">Wyloguj</a></p>
 			</div>
 		</div>
