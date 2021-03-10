@@ -2,6 +2,8 @@
     require_once dirname(__FILE__).'/../config.php';
     require_once _ROOT_PATH.'/lib/smarty/Smarty.class.php';
     
+    include _ROOT_PATH.'/app/security/check.php';
+    
     function getParams(&$formCalc){
         $formCalc['kredyt'] = isset($_REQUEST['kredyt']) ? $_REQUEST['kredyt'] : null;
         $formCalc['lata'] = isset($_REQUEST['il_lat']) ? $_REQUEST['il_lat'] : null;
@@ -45,7 +47,7 @@
 	process($formCalc, $msc_kwota, $messages);
     }
     
-     $smarty = new Smarty();
+    $smarty = new Smarty();
 
     $smarty -> assign('app_url',_APP_URL);
     $smarty -> assign('root_path',_ROOT_PATH); 
