@@ -1,5 +1,5 @@
-# JPDSI
-Lab1 - podstawowe operacje php  
+## JPDSI
+[Lab1 - podstawowe operacje php  ](Lab1)
 Lab2 - kalkulator rat  
 Lab3 - kalkulator rat z ochroną hasłem  
 Lab4_1 - szablonowanie przez łączenie html  
