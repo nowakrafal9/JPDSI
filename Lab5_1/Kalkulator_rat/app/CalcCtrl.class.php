@@ -60,9 +60,9 @@
             $smarty->assign('conf',$conf);
             
             $smarty->assign('page_title','Kalkulator rat');
-            $smarty -> assign('page_description','Kalkulator rat obiektowy');
-            $smarty -> assign('page_header','<h1 class="lead">Kalkulator rat</h1> <p class="tagline">Obiektowość</p>');
-            $smarty -> assign('page_footer','Kalkulator rat oparty na szablonie <a href="https://www.gettemplate.com/info/progressus/">Progressus</a>');
+            $smarty->assign('page_description','Kalkulator rat obiektowy');
+            $smarty->assign('page_header','<h1 class="lead">Kalkulator rat</h1> <p class="tagline">Obiektowość</p>');
+            $smarty->assign('page_footer','Kalkulator rat oparty na szablonie <a href="https://www.gettemplate.com/info/progressus/">Progressus</a>');
         
             $smarty->assign('messages', $this->messages);
             $smarty->assign('form', $this->form);
