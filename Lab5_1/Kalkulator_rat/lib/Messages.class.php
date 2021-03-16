@@ -4,7 +4,6 @@
         
         public function addError($message){
             $this->errors[] = $message;
-            $this->num ++;
         }
         
         public function isError(){

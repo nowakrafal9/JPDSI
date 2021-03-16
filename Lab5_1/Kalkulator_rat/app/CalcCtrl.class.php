@@ -1,8 +1,8 @@
 <?php
     require_once $conf->root_path.'/lib/smarty/Smarty.class.php';
     require_once $conf->root_path.'/lib/Messages.class.php';
-    require_once $conf->root_path.'app/CalcForm.class.php';
-    require_once $conf->root_path.'app/CalcResult.class.php';
+    require_once $conf->root_path.'/app/CalcForm.class.php';
+    require_once $conf->root_path.'/app/CalcResult.class.php';
     
     class CalcCtrl {
         private $messages;
@@ -38,15 +38,17 @@
        
         public function process(){
             $this->getParams();
-           
-            $this->form->kredyt = intval($this->form->kredyt);
-            $this->form->lata = intval($this->form->lata);
-            $this->form->prcent = intval($this->form->prcent);
             
-            $this->result->msc_kwota = $this->form->kredyt/($this->form->lata*12);
-            $this->result->msc_kwota = $this->result->msc_kwota*($this->form->procent/100);
+            if ($this->validate()){
+                $this->form->kredyt = intval($this->form->kredyt);
+                $this->form->lata = intval($this->form->lata);
+                $this->form->prcent = intval($this->form->procent);
             
-            $this->result->msc_kwota = (int) ($this->result->msc_kwota*100)/100;
+                $this->result->msc_kwota = $this->form->kredyt/($this->form->lata*12);
+                $this->result->msc_kwota += $this->result->msc_kwota*($this->form->procent/100);
+            
+                $this->result->msc_kwota = (int) ($this->result->msc_kwota*100)/100;
+            }
             
             $this->generateView();
         }
