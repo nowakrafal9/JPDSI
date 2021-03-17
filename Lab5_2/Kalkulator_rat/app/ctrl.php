@@ -1,8 +1,27 @@
 <?php
+    require_once dirname(__FILE__).'/../config.php';
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+    $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
+    
+    switch($action){
+        default:
+            include_once $conf->root_path.'/app/calc/CalcCtrl.class.php';
+            
+            $ctrl = new CalcCtrl();
+            $ctrl->generateView();
+        break;
+        
+        case 'compute':
+            include_once $conf->root_path.'/app/calc/CalcCtrl.class.php';
+            
+            $ctrl = new CalcCtrl();
+            $ctrl->process();
+        break;
+    
+        case 'other_action':
+            include_once $conf->root_path.'/app/other/ExampleCtrl.class.php';
+            
+            $ctrl = new ExampleCtrl();
+            $ctrl->generateView();
+        break;
+    }
