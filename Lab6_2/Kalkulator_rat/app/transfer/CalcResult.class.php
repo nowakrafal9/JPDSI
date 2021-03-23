@@ -1,4 +1,6 @@
 <?php
-    class CalcResult {
-  
+    namespace app\transfer;
+      
+    class CalcResult{
+        public $msc_kwota;
     }
