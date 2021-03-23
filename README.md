@@ -5,4 +5,4 @@
 [Lab 4_1 - szablonowanie przez łączenie html  ](Lab4_1/Kalkulator_rat)\
 [Lab 4_2 - szablonowanie Smarty  ](Lab4_2/Kalkulator_rat)\
 [Lab 5_1 - kalkulator rat obiektowo  ](Lab5_1/Kalkulator_rat)\
-[Lab 5_2 - kalkulator rat z kotrolerem głównym  ](Lab5_2/Kalkulator_rat)
+[Lab 5_2 - kalkulator rat z kontrolerem głównym  ](Lab5_2/Kalkulator_rat)
