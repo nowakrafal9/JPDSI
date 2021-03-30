@@ -7,4 +7,5 @@
 [Lab 5_1 - kalkulator rat obiektowo  ](Lab5_1/Kalkulator_rat)\
 [Lab 5_2 - kalkulator rat z kontrolerem głównym  ](Lab5_2/Kalkulator_rat)\
 [Lab 6_1 - kalkulator rat z nową strukturą  ](Lab6_1/Kalkulator_rat)\
-[Lab 6_2 - kalkulator rat z autoloaderem  ](Lab6_2/Kalkulator_rat)
+[Lab 6_2 - kalkulator rat z autoloaderem  ](Lab6_2/Kalkulator_rat)\
+[Lab 7_1 - kalkulator rat z ochroną zasobów  ](Lab7_1/Kalkulator_rat)
