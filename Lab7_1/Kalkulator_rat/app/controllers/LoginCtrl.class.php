@@ -17,10 +17,14 @@
 	}
 
         public function validate(){
-            if(!(isset($this->form->login) && isset($this->form->pass))){ getMessages()->addError('Błędne wywołanie aplikacji !'); }
+            if(!(isset($this->form->login) && isset($this->form->pass))){ 
+                getMessages()->addError('Błędne wywołanie aplikacji !'); 
+            }
             
-            if($this->form->login == "") { getMessages()->addError("Nie podano loginu"); }
-            if($this->form->pass == "") { getMessages()->addError("Nie podano hasła"); }
+            if(!getMessages()->isError()) {
+                if($this->form->login == "") { getMessages()->addError("Nie podano loginu"); }
+                if($this->form->pass == "") { getMessages()->addError("Nie podano hasła"); }
+            }
             
             if(!getMessages()->isError()) {
                 if($this->form->login == "user" && $this->form->pass == "user"){
@@ -39,7 +43,7 @@
                     getMessages()->addError("Niepoprawne dane logowania");
                 }        
             }
-            return ! getMessages()->isError();
+            return !getMessages()->isError();
         }
         
         public function doLogin() {
@@ -64,7 +68,7 @@
 	public function generateView(){
             getSmarty()->assign('page_title','Kalkulator rat');
             getSmarty()->assign('page_description','Kalkulator rat obiektowy');
-            getSmarty()->assign('page_header','<h1 class="lead">Kalkulator rat</h1> <p class="tagline">Kontroler główny</p>');
+            getSmarty()->assign('page_header','<h1 class="lead">Kalkulator rat</h1> <p class="tagline">Ochrona zasobów</p>');
             getSmarty()->assign('page_footer','Kalkulator rat oparty na szablonie <a href="https://www.gettemplate.com/info/progressus/">Progressus</a>');
             
             getSmarty()->assign('form',$this->form);

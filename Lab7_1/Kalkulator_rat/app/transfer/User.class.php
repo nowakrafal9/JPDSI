@@ -5,7 +5,7 @@
         public $login;
         public $role;
         
-        public function _construct($login, $role){
+        public function __construct($login, $role){
             $this->login = $login;
             $this->role = $role;
         }

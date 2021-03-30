@@ -24,11 +24,4 @@
             $ctrl = new app\controllers\CalcCtrl();
             $ctrl->process();
         break;
-    
-        case 'other_action':
-            include 'check.php';
-            
-            $ctrl = new app\controllers\ExampleCtrl();
-            $ctrl->generateView();
-        break;
     }
