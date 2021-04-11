@@ -8,4 +8,6 @@
 [Lab 5_2 - kalkulator rat z kontrolerem głównym  ](Lab5_2/Kalkulator_rat)\
 [Lab 6_1 - kalkulator rat z nową strukturą  ](Lab6_1/Kalkulator_rat)\
 [Lab 6_2 - kalkulator rat z autoloaderem  ](Lab6_2/Kalkulator_rat)\
-[Lab 7_1 - kalkulator rat z ochroną zasobów  ](Lab7_1/Kalkulator_rat)
+[Lab 7_1 - kalkulator rat z ochroną zasobów  ](Lab7_1/Kalkulator_rat)\
+[Lab 7_2 - kalkulator rat, role  ](Lab7_2/Kalkulator_rat)\
+[Lab 7_3 - kalkulator rat, routing  ](Lab7_3/Kalkulator_rat)
