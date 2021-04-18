@@ -10,4 +10,5 @@
 [Lab 6_2 - kalkulator rat z autoloaderem  ](Lab6_2/Kalkulator_rat)\
 [Lab 7_1 - kalkulator rat z ochroną zasobów  ](Lab7_1/Kalkulator_rat)\
 [Lab 7_2 - kalkulator rat, role  ](Lab7_2/Kalkulator_rat)\
-[Lab 7_3 - kalkulator rat, routing  ](Lab7_3/Kalkulator_rat)
+[Lab 7_3 - kalkulator rat, routing  ](Lab7_3/Kalkulator_rat)\
+[Lab 8 - kalkulator rat, baza danych  ](Lab8/Kalkulator_rat)
